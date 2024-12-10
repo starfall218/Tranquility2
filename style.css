@@ -1,0 +1,408 @@
+
+body {
+    color: #dff1ff;
+    background-color: white;
+}
+.thefirstsection {
+    height: 600px;
+    display: block;
+}
+.thefirstsection video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bgoverlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    left: 0;
+    background-color: #00e5ff;
+    background: linear-gradient(transparent);
+    opacity: 0.2;    
+}
+a {
+    color: #dff1ff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+ul {
+    display: inline;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin-left: 2rem;
+}
+nav ul li::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    background-color: #dff1ff;
+    transition: all 0.5s ease-out;
+}
+nav ul li:hover::after {
+    width: 90%;
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+.socials {
+    position: absolute;
+    right: 0;
+}
+.socials img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    margin-top: 10px;
+    transition: all 2s ease-in-out;
+}
+.socials img:hover {
+    width: 45px;
+    height: 45px;
+    margin-top: 15px;
+    transform: scaleX(-1);
+}
+.dropDown {
+    transition: all 5s;
+}
+.dropDown button {
+    margin-right: 1rem;
+    border-radius: 7px;
+}
+.dropDown .content {
+    display: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background-color: #4fa5fb;
+    border-radius: 10px;
+    transition: all 5s;
+}
+.dropDown .line {
+    width: 100%;
+    height: 2px;
+    background-color: #befbff;
+    border-radius: 5px;
+}
+.dropDown a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    transition: all 5s;
+}
+.dropDown .content {
+    transition: all 5s;
+}
+.dropDown a:hover {
+    background-color: rgb(255, 255, 255);
+}
+.dropDown:hover .content {
+    display: block;
+}
+.right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-right: 1rem;
+}
+header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 4em;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    cursor: default;
+    transition: all 10s ease-in-out 1s;
+}
+header h1:hover {
+    font-size: 1em;
+    letter-spacing: 8px;
+    color: whitesmoke;
+}
+header blockquote {
+    text-align: center;
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    text-wrap: wrap;
+    width: 300px;
+}
+
+
+
+button {
+    background-color: #10e3fa;
+    opacity: 0.8;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    text-align: end;
+    transition: all 1s;
+}
+button:hover {
+    background-color: transparent;
+}
+.headertext2 {
+    background: url(group-sporty-people-sukhasana-pose.jpg);
+    background-size: cover;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+.headertext2 .bgoverlay2 {
+    position: absolute;
+    background-color: #4fa5fb;
+    opacity: 0.5;
+    width: 100%;
+    height: 400px;
+}
+.headertext2 button {
+    background-color: #3dbfd6;
+    padding: 10px 15px;
+    color: whitesmoke;
+    text-align: center;
+    transition: 1s;
+}
+.headertext2 .paragraphs {
+    width: 500px;
+    font-family: 'Roboto';
+}
+.headertext2 button:hover {
+    opacity: 0.5;
+    font-weight: 600;
+}
+.headertext2 legend {
+    margin-top: 2rem;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+}
+.headertext2 #num1 {
+    margin-top: 20px;
+    border-top-left-radius: 1em;
+    border: none;
+    padding: 10px;
+    background-color: #dff1ff;
+}
+.headertext2 .right {
+    position: relative;
+}
+fieldset {
+    border: none;
+    width: 180px;
+    height: 130px;
+}
+.headertext2 #submit {
+    display: block;
+    border: none;
+    border-bottom-right-radius: 1em;
+    padding: 15px;
+    background-color: #dff1ff;
+    margin-top: 6rem;
+    transition: all 0.2s ease;
+}
+#submit:hover {
+    opacity: 0.3;
+}
+.headertext2 input {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px black solid;
+    border-right: none;
+    border-left: none;
+    padding: 14px 5px;
+}
+.headertext2 img {
+    width: 100%;
+    object-fit: cover;
+}
+.headertext2 #form {
+    display: none;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: url(rb_4016.png);
+    background-color: #95b0b5;
+    background-size: cover;
+    border: 5px #eef2f5 solid;
+    border-radius: 15px;
+    margin-left: 8rem;
+}
+.headertext2 #form svg {
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+    margin-right: -13px;
+}
+.num3 {
+    display: flex;
+}
+.buy img {
+    width: 500px;
+    object-fit: cover;
+}
+h2 {
+    display: block;
+    font-size: 23px;
+    margin-left: 1rem;
+    color: black;
+    font-family: Arial;
+}
+.playlist {
+    width: 350px;
+    height: 430px;
+    background: rgb(47,171,172);
+    background: linear-gradient(0deg, rgba(47,171,172,1) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+@media only screen and (min-width: 600px) {
+    .num3 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.playlist {
+    display: none;
+}
+.buy {
+    display: flex;
+    text-shadow: 0px 9px 2px rgba(0,0,0,0.14);
+}
+.music img {
+    display: block;
+    object-fit: cover;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about p {
+    font-size: 27px;
+    font-family: 'Roboto';
+    color: black;
+    width: 300px;
+}
+.middle {
+    margin-left: 20px;
+}
+.middle h4 {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.middle .play {
+    margin-left: 12rem;
+}
+.line1 {
+    height: 1px;
+    width: 93%;
+    background-color: white;
+}
+.inner {
+    display: flex;
+    justify-content: space-around;
+}
+.secondtothelast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background: url(sunset-beach-sea-wave.jpg);
+    background-size: cover;
+}
+.secondtothelast h1 {
+    margin-top: 3rem;
+    z-index: 100;
+}
+.secondtothelast h1, p {
+    position: relative;
+    font-family: 'Roboto';
+    color: white;
+}
+.secondtothelast p {
+    width: 400px;
+}
+.secondtothelast button {
+    background-color: gray;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: all 1s;
+}
+.secondtothelast button:hover {
+    background-color: white;
+    color: black;
+}
+.secondtothelast .overlay2 {
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.2;
+    width: 100%;
+    height: 400px;
+}
+#services {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#services img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 3rem;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    height: 50px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+footer p {
+    margin-bottom: 0;
+}
