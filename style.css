@@ -275,6 +275,13 @@ fieldset {
 .num3 {
     display: flex;
 }
+.arrivals {
+    font-family: "Playwrite BE WAL", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5rem;
+}
 .buy img {
     width: 500px;
     object-fit: cover;
